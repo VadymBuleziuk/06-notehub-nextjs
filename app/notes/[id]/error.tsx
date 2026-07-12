@@ -1,13 +1,13 @@
 "use client";
 import css from "./error.module.css";
 
-type Props = {
+type ErrorMessageProps = {
   error: Error;
 };
 
-const Error = ({ error }: Props) => {
+const ErrorMessage = ({ error }: ErrorMessageProps) => {
   return;
   <p className={css.text}>Could not fetch note details. {error.message}</p>;
 };
 
-export default Error;
+export default ErrorMessage;
